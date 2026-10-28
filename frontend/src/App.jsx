@@ -8,8 +8,12 @@ import Home from './pages/Home'
 import Customize2 from './pages/Customize2'
 
 function App() {
+<<<<<<< HEAD
   const {userData,authLoading}=useContext(userDataContext)
   if (authLoading) return null
+=======
+  const {userData,setUserData}=useContext(userDataContext)
+>>>>>>> origin/main
   return (
    <Routes>
      <Route path='/' element={(userData?.assistantImage && userData?.assistantName)? <Home/> :<Navigate to={"/customize"}/>}/>
